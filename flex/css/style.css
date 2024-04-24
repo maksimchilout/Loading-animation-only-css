@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111; }
+
+.container {
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .container p {
+    position: absolute;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.5em;
+    bottom: -80px;
+    letter-spacing: 0.1em; }
+  .container .ring {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #24ecff;
+    -webkit-animation: animate 4s linear infinite;
+    animation: animate 4s linear infinite; }
+    .container .ring::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #24ecff;
+      top: 12px;
+      right: 12px;
+      -webkit-box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 15px #24ecff11, 0 0 20px #24ecff, 0 0 50px #24ecff;
+      box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 15px #24ecff11, 0 0 20px #24ecff, 0 0 50px #24ecff;
+      border-radius: 50%; }
+    .container .ring:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      top: initial;
+      height: 15px;
+      background: #93ff2d;
+      bottom: 12px;
+      left: 12px;
+      -webkit-box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 15px #93ff2d11, 0 0 20px #93ff2d, 0 0 50px #93ff2d;
+      box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 15px #93ff2d11, 0 0 20px #93ff2d, 0 0 50px #93ff2d;
+      border-radius: 50%; }
+    .container .ring:nth-child(2) {
+      -webkit-animation: animate2 4s linear infinite;
+      animation: animate2 4s linear infinite;
+      -webkit-animation-delay: -1s;
+      animation-delay: -1s;
+      border-left: 4px solid #93ff2d;
+      border-top: 4px solid transparent; }
+    .container .ring:nth-child(3) {
+      -webkit-animation: animate2 4s linear infinite;
+      animation: animate2 4s linear infinite;
+      -webkit-animation-delay: -3s;
+      animation-delay: -3s;
+      position: absolute;
+      top: -66.66px;
+      border-top: 4px solid transparent;
+      border-left: 4px solid #e41cf8; }
+    .container .ring:nth-child(3)::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      top: initial;
+      height: 15px;
+      background: #e41cf8;
+      bottom: 12px;
+      left: 12px;
+      -webkit-box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf822, 0 0 0 15px #e41cf811, 0 0 20px #e41cf8, 0 0 50px #e41cf8;
+      box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf822, 0 0 0 15px #e41cf811, 0 0 20px #e41cf8, 0 0 50px #e41cf8;
+      border-radius: 50%; }
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
